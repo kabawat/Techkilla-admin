@@ -1,0 +1,98 @@
+.pageSectionInner {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageSectionInner:hover {
+    border-color: transparent;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.count {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(255 203 71);
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+
+.pageSectionInner .title {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.cover_select {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #ddd;
+}
+
+.cover_bg {
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.count_length {
+    width: 40px;
+    height: 35px;
+    border-radius: 6px;
+    background: #ddd;
+    color: #000;
+    display: grid;
+    place-items: center;
+}
+
+.icon_box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.icon_box img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.icon_select {
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #ddd;
+
+}
+
+.card_page {
+    cursor: pointer;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}

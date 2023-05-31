@@ -1,0 +1,91 @@
+.aside_logo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    align-items: center;
+    /* border-bottom: 1px solid #fafafa; */
+}
+
+.aside_list_menu {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.aside_list {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 60px;
+    position: relative;
+    background: #fff;
+}
+
+.aside_list .link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.link span:nth-child(1) {
+    padding: 0px 10px;
+}
+
+.link span:nth-child(2) {
+    /* padding-bottom: 6px; */
+}
+
+.one,
+.two {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    background: #fff;
+    display: none;
+}
+
+.one {
+    top: -20px;
+}
+
+.two {
+    bottom: -20px;
+    z-index: 5;
+}
+
+.one::after,
+.two::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+    background: #fff;
+}
+
+.aside_list.active,
+.aside_list.active .one,
+.aside_list.active .two {
+    display: inline-block;
+    background: #fafafa;
+}
+
+.one::after {
+    border-bottom-right-radius: 20px;
+}
+
+.two::after {
+    border-top-right-radius: 20px;
+}

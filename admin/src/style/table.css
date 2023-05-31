@@ -1,0 +1,13 @@
+.work-table-recent-img img {
+    width: 80px;
+}
+
+.table-action-btn {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+}
