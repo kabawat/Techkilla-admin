@@ -32,7 +32,7 @@ const handler = async (req, res) => {
         }
         upload.fields([{ name: 'cart_them' }])(req, res, async (error) => {
             if (error) {
-                res.status(500).json({ error: 'Failed to upload files' });
+                res.status(500).json({ error });
             } else {
                 try {
                     const { files } = req;

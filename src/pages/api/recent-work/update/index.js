@@ -29,7 +29,7 @@ const handler = async (req, res) => {
         }
         upload.fields([{ name: 'logo' }, { name: 'thumbnail' }])(req, res, async (error) => {
             if (error) {
-                res.status(500).json({ error: 'Failed to upload files' });
+                res.status(500).json({ error });
             } else {
                 const isExist = await workModel.findOne({ _id: req.body?.id }, 'thumbnail logo')
                 const { files } = req;
