@@ -29,7 +29,7 @@ const handler = async (req, res) => {
         }
         upload.fields([{ name: 'cover_page' }, { name: 'thumbnail' }, { name: 'icon' }])(req, res, async (error) => {
             if (error) {
-                res.status(500).json({ error});
+                res.status(500).json({ error, uploadDir });
             } else {
                 const { files } = req;
                 if (files?.cover_page) {
